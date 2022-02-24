@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+    background: #001429;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.inputBox{
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 5px;
+    border: 1px solid rgb(58, 136, 182);
+    border-radius: 8px;
+    width: 300px;
+    background: #011c38;
+    margin: 3em 0;
+}
+.input{
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+    background: #011c38;
+    padding: 2px 5px;
+    color: rgb(137, 186, 206);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.outputBox{
+    background: rgb(35, 57, 88);
+    backdrop-filter: blur(50px);
+    width: 60%;
+    border: 1px solid rgb(58, 136, 182);
+    padding: 10px;
+    border-radius: 5px;
+}
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(210, 237, 255);
+    margin: .5em 0;
 }
 
-.App-link {
-  color: #61dafb;
+.profileInfo{
+    display: flex;
+    align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.profileInfo p, .repoQuanti {
+    background: rgb(0, 104, 201);
+    border-radius: 8px;
+    padding: 5px 10px;
 }
+
+.reposNames{
+    border-top: 1px solid rgb(101, 171, 218);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.outputedRepoName{
+    padding: 5px 10px;
+    display: flex;
+    text-decoration: none;
+    color: rgb(137, 186, 206);
+}
+.link{
+    text-decoration: none;
+    background: rgb(17, 32, 63);
+    margin: .5em;
+    border-radius: 5px
+}
+
+.info p{
+    margin: 0 1em;
+}
+
+.header{
+    color: rgb(188, 209, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.header h1{
+    font-size: 3rem;
+    font-weight: 100;
+}
+
